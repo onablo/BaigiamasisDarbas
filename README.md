@@ -5,7 +5,7 @@
 
 
 ****Final work published at:**** 
- *git@github.com: onablo/BaigiamasisDarbas.git*
+ *git@github.com:onablo/BaigiamasisDarbas.git*
 
 ****Website link:****  https://www.fotoservisas.lt
 
