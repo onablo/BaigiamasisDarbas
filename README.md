@@ -4,9 +4,15 @@
 ###### Website testing project
 
 
-****_Final work published at:_**** 
-https://onablo.github.io/BaigiamasisDarbas/
+****Final work published at:**** 
+ *git@github.com: onablo/BaigiamasisDarbas.git*
 
-****_Website link:_****  https://www.fotoservisas.lt
+****Website link:****  https://www.fotoservisas.lt
 
-## Testing cases
+## Testing cases:
+1. ***Check menu function: photo categories***
+   - Open WebSite, click link
+   - Click photo categories submenu
+   - Expecting text: "_NUOTRAUKOS INTERNETU_"
+   ```
+2. 
