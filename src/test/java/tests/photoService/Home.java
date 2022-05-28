@@ -16,7 +16,6 @@ public class Home extends BaseTest {
     @Test
     public void getPhotoCategories() {
 
-        //pages.photoService.Home.clickPhotoCategoriesSubmenu();
         String expectedPhotoCategoriesText = "NUOTRAUKOS INTERNETU";
         pages.photoService.PhotoCategories.clickPhotoCategoriesSubmenu();
         String actualText = pages.photoService.PhotoCategories.readText();
