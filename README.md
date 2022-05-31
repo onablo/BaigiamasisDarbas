@@ -1,45 +1,40 @@
-# **FotoServis**
-### _Maven + Java + Selenium_
+# **Maven + Java + Selenium demo project**
+## Setup
+### Packages used
+- TestNG `org.testng:testng`
+- Selenium `org.seleniumhq.selenium:selenium-java`
+- WebDriverManager `io.github.bonigarcia:webdrivermanager`
+### Site used for testing
 
-###### Website testing project
+[FotoServis](https://www.fotoservisas.lt)
 
-
-****Final work published at:**** 
- *git@github.com:onablo/BaigiamasisDarbas.git*
-
-****Website link:****  https://www.fotoservisas.lt
+****Final work published at:****
+*https://github.com/onablo/BaigiamasisDarbas.git*
 
 ## Testing cases:
-1. ### Check menu function: photo categories
+
+### 1. Check photo ordered function, ordering photo 10x15 from list
 - Click photo categories submenu
-- Expecting text: "_NUOTRAUKOS INTERNETU_"
-  
-2. ### Check photo ordered function
-- Click photo categories submenu
+- Close cookies agreement with waiting
 - Click photo-formats "10x15"
-- Choose input property "Popierius"
-- Choose input property "Spalvingumas"
-- Choose input property "Vaizdo talpinimas"
-- Click on field for photo input
-- Choose photo from computer
-- Drug and drop photo
-- Expected text "Preke itraukta i krepseli"
+- Get expected text in opened window
 
-3. ### Check photo frame ordered function from product list
-- Click roducts submenu
+### 2. Check photo frame ordered function from products list
+- Click products submenu
+- Close cookies agreement with waiting
 - Click "Suvenyriniai-remeliai"
-- Click "Remelis-wd10-10x15"
-- Click "Ideti i krepseli"
-- Expected text "Preke itraukta i krepseli"
+- Click "Frame-wd10-10x15"
+- To choose product quantity  
+- Click add to order list
+- Expected text in opened window "Preke itraukta i krepseli"
 
-4. ### Check ordered products content 
-- Click "Krepselyje" order
-- Check photo addition
+### 3. Check ordered products content 
+- Click order list
 - Check frame addition
 - Press "Testi"
 - Expected login button
 
-5. ### Check Login function
+### 4. Check Login function
 - Click Login 
 - Click Register
 - Click "Fizinis asmuo"
