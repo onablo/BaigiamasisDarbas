@@ -3,6 +3,7 @@ package tests.photoService;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import pages.Locators;
 import tests.BaseTest;
 
 public class PhotoCategories extends BaseTest {
@@ -22,7 +23,7 @@ public class PhotoCategories extends BaseTest {
         pages.photoService.PhotoCategories.clickAgreeButtonAfterEnabled();
         pages.photoService.PhotoCategories.selectFormatFromPhotoProduction();
         String actualText = pages.photoService.PhotoCategories.readText();
-        System.out.println(actualText);
+        //System.out.println(actualText);
         Assert.assertEquals(actualText , expectedSelectedPhotoCategoriesText);
     }
 }

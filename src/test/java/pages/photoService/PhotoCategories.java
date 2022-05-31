@@ -12,13 +12,12 @@ public class PhotoCategories {
         Common.clickElement(Locators.PhotoService.PhotoCategories.photoCategoriesSubmenu);
     }
     public static void clickAgreeButtonAfterEnabled() {
-        Common.waitForElementToBeVisible(Locators.PhotoService.ProductsSelection.agreeElement);
-        Common.clickElement(Locators.PhotoService.ProductsSelection.agreeElement);
+        Common.waitForElementToBeVisible(Locators.PhotoService.agreeElement);
+        Common.clickElement(Locators.PhotoService.agreeElement);
     }
     public static void selectFormatFromPhotoProduction() {
         Common.clickElement(Locators.PhotoService.PhotoCategories.photoSelectFormat);
     }
-
     public static String readText() {
         return Common.getElementText(Locators.PhotoService.PhotoCategories.photoSelectedFormat);
     }
