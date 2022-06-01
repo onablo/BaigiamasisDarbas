@@ -28,8 +28,9 @@ public class ProductsSelection extends BaseTest {
         pages.photoService.ProductsSelection.enterValue(Integer.toString(selectedQuantity));
         pages.photoService.ProductsSelection.clickAddToOrderedProductList();
         String actualAddToOrderText = pages.photoService.ProductsSelection.readText();
-        System.out.println(actualAddToOrderText);
-        Assert.assertEquals(actualAddToOrderText, expectedAddToOrderText);
 
+        //System.out.println(actualAddToOrderText);     - patikrinimas
+
+        Assert.assertEquals(actualAddToOrderText, expectedAddToOrderText);
     }
 }

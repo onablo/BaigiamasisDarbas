@@ -1,6 +1,5 @@
 package pages.photoService;
 
-
 import pages.Common;
 import pages.Locators;
 
@@ -12,11 +11,12 @@ public class ProductsSelection {
     public static void clickPhotoProducts() {
         Common.clickElement(Locators.PhotoService.ProductsSelection.photoProducts);
     }
+
     public static void clickAgreeButtonAfterEnabled() {
         Common.waitForElementToBeVisible(Locators.PhotoService.agreeElement);
         Common.clickElement(Locators.PhotoService.agreeElement);
     }
-    public static void clickSouvenirFrames() {
+       public static void clickSouvenirFrames() {
         Common.clickElement(Locators.PhotoService.ProductsSelection.souvenirFrames);
     }
     public static void clickOnSelectFrameFromProducts() {

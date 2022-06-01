@@ -11,6 +11,7 @@ public class PhotoCategories {
     public static void clickPhotoCategoriesSubmenu() {
         Common.clickElement(Locators.PhotoService.PhotoCategories.photoCategoriesSubmenu);
     }
+
     public static void clickAgreeButtonAfterEnabled() {
         Common.waitForElementToBeVisible(Locators.PhotoService.agreeElement);
         Common.clickElement(Locators.PhotoService.agreeElement);

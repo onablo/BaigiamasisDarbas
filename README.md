@@ -28,11 +28,14 @@
 - Click add to order list
 - Expected text in opened window "Preke itraukta i krepseli"
 
-### 3. Check ordered products content 
-- Click order list
-- Check frame addition
-- Press "Testi"
-- Expected login button
+### 3. Check selected products price and total price in cart 
+- Click on Gift Ideas in menu list 
+- Close cookies agreement with waiting
+- Select Gift Coupons
+- Select gift coupon(price 5 €) 
+- Add selected coupon to cart
+- Press "Buy" on appeared popup
+- Expect selected gift coupon price and cart total amount is the same
 
 ### 4. Check Login function
 - Click Login 

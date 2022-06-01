@@ -3,7 +3,6 @@ package tests.photoService;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import pages.Locators;
 import tests.BaseTest;
 
 public class PhotoCategories extends BaseTest {
@@ -19,11 +18,14 @@ public class PhotoCategories extends BaseTest {
                 "Nuotrauka spausdinama naudojant tik aukščiausios kokybės profesionalias fotomedžiagas: " +
                 "FUJI DPII fotopopierių, Kodak Pro chemija, taip užtikrinant nuotraukos ilgaamžiškumą.\n" +
                 "Yra galimybė pasirinkti skubų užsakymą";
+
         pages.photoService.PhotoCategories.clickPhotoCategoriesSubmenu();
         pages.photoService.PhotoCategories.clickAgreeButtonAfterEnabled();
         pages.photoService.PhotoCategories.selectFormatFromPhotoProduction();
         String actualText = pages.photoService.PhotoCategories.readText();
-        //System.out.println(actualText);
+
+        //System.out.println(actualText);       - patikrinimas
+
         Assert.assertEquals(actualText , expectedSelectedPhotoCategoriesText);
     }
 }

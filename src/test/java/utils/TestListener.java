@@ -5,13 +5,10 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-import utils.Driver;
-
 import java.io.File;
 import java.util.UUID;
 
 public class TestListener implements ITestListener {
-
     private void takeScreenshot() {
         try {
             TakesScreenshot takesScreenshot = ((TakesScreenshot) Driver.getDriver());
@@ -23,7 +20,6 @@ public class TestListener implements ITestListener {
             System.out.println("Exception while taking a screenshot: " + ex.getMessage());
         }
     }
-
     @Override
     public void onTestFailure(ITestResult result) {
         takeScreenshot();
