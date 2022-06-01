@@ -37,16 +37,11 @@
 - Press "Buy" on appeared popup
 - Expect selected gift coupon price and cart total amount is the same
 
-### 4. Check Login function
+### 4. Check Login with username
 - Click Login 
-- Click Register
-- Click "Fizinis asmuo"
 - Fill Email input 
 - Fill Password input
-- Fill Repeat password input
-- Fill Name input
-- Fill Surname input
-- Fill Phone Nr input
-- Press agreement checkbox
-- Click "Registruotis"
-- Expected window asking to save password 
+- Press login button
+- Expected logout option in home page 
+
+### 5. Check login without registration

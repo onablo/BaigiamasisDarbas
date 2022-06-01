@@ -40,5 +40,4 @@ public class Common {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Constants.TIMEOUT);
         wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
-
 }

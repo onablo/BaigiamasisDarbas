@@ -40,7 +40,20 @@ public class Locators {
             public static By homePageCartPrice = By.xpath("//*[@class='amount']");
         }
 
-        public static By agreeElement = By.xpath("//*[@class= 'btn btn-primary btn-sm acceptcookies']");
+        public static class Login {
+
+            public static By loginElement = By.xpath("//*[@class='user-account']//*[text()='registruotis']");
+
+            public static By userEmailInput = By.xpath("//*[@id='username']");
+
+            public static By userPasswordInput = By.xpath("//*[@id='password']");
+
+            public static By LoginButton = By.xpath("//*[@id='_submit']");
+
+            public static By userLogout = By.xpath("//*[@class='user-account']//*[text()='Atsijungti']");
+        }
+
+            public static By agreeElement = By.xpath("//*[@class= 'btn btn-primary btn-sm acceptcookies']");
 
     }
 
