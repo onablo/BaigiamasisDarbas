@@ -12,7 +12,7 @@ public class OrderList  extends BaseTest {
     }
 
     @Test
-    public void changeQuantitySelectedProductInOrderedList() {
+    public void checkPriceInCartAndSelectedCouponPrice() {
 
         pages.photoService.OrderList.clickOnGiftIdeas();
         pages.photoService.OrderList.clickAgreeButtonAfterEnabled();
