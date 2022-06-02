@@ -4,6 +4,7 @@ import pages.Common;
 import pages.Locators;
 
 public class Login {
+
     public static void clickLoginInHomePage() {
         Common.clickElement(Locators.PhotoService.Login.loginElement);
     }
@@ -16,8 +17,8 @@ public class Login {
         Common.sendKeysToElement(Locators.PhotoService.Login.userPasswordInput, password);
     }
 
-    public static void ClickLoginButton() {
-        Common.clickElement(Locators.PhotoService.Login.LoginButton);
+    public static void clickLoginButton() {
+        Common.clickElement(Locators.PhotoService.Login.loginButton);
     }
 
     public static String readText() {

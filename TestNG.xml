@@ -6,6 +6,7 @@
             <class name="tests.photoService.PhotoCategories"/>
             <class name="tests.photoService.ProductsSelection"/>
             <class name="tests.photoService.OrderList"/>
+            <class name="tests.photoService.Login"/>
          </classes>
     </test>
 </suite>

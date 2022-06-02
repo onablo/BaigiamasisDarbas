@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import tests.BaseTest;
+
 public class Login extends BaseTest {
 
     @BeforeMethod
@@ -21,7 +22,7 @@ public class Login extends BaseTest {
         pages.photoService.Login.clickLoginInHomePage();
         pages.photoService.Login.fillEmailInput(email);
         pages.photoService.Login.fillPasswordInput(password);
-        pages.photoService.Login.ClickLoginButton();
+        pages.photoService.Login.clickLoginButton();
         String actualText = pages.photoService.Login.readText();
 
         Assert.assertEquals(actualText, expectedText);

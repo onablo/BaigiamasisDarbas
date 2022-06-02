@@ -5,7 +5,6 @@ import pages.Common;
 
 public class OrderList {
 
-
     public static void open() {
         Common.openUrl("https://www.fotoservisas.lt");
     }

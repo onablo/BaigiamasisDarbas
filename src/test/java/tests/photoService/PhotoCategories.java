@@ -11,6 +11,7 @@ public class PhotoCategories extends BaseTest {
     public void openLink() {
         pages.photoService.PhotoCategories.open();
     }
+
     @Test
     public void getPhotoCategories() {
 
