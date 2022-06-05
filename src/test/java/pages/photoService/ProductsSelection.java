@@ -1,5 +1,6 @@
 package pages.photoService;
 
+import org.openqa.selenium.By;
 import pages.Common;
 import pages.Locators;
 
@@ -14,8 +15,9 @@ public class ProductsSelection {
     }
 
     public static void clickAgreeButtonAfterEnabled() {
-        Common.waitForElementToBeVisible(Locators.PhotoService.agreeElement);
-        Common.clickElement(Locators.PhotoService.agreeElement);
+        By locator = Locators.PhotoService.agreeElement;
+        Common.waitForElementToBeVisible(locator);
+        Common.clickElement(locator);
     }
 
        public static void clickSouvenirFrames() {
@@ -41,8 +43,9 @@ public class ProductsSelection {
 
 
     public static void clickBuyButtonOnAppearPopup() {
-        Common.waitForElementToBeVisible(Locators.PhotoService.ProductsSelection.giftBuyingSelect);
-        Common.clickElement(Locators.PhotoService.ProductsSelection.giftBuyingSelect);
+        By locator = Locators.PhotoService.ProductsSelection.giftBuyingSelect;
+        Common.waitForElementToBeVisible(locator);
+        Common.clickElement(locator);
     }
 
     public static void clickOnCartSubmitButton() {
@@ -78,8 +81,9 @@ public class ProductsSelection {
     }
 
     public static void clickContinue() {
-        Common.waitForElementToBeClickable(Locators.PhotoService.ProductsSelection.continueButton);
-        Common.clickElement(Locators.PhotoService.ProductsSelection.continueButton);
+        By locator = Locators.PhotoService.ProductsSelection.continueButton;
+        Common.waitForElementToBeClickable(locator);
+        Common.clickElement(locator);
     }
 
     public static String readCartText() {

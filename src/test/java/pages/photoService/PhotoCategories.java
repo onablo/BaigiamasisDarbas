@@ -1,5 +1,6 @@
 package pages.photoService;
 
+import org.openqa.selenium.By;
 import pages.Common;
 import pages.Locators;
 
@@ -14,8 +15,9 @@ public class PhotoCategories {
     }
 
     public static void clickAgreeButtonAfterEnabled() {
-        Common.waitForElementToBeVisible(Locators.PhotoService.agreeElement);
-        Common.clickElement(Locators.PhotoService.agreeElement);
+        By locator = Locators.PhotoService.agreeElement;
+        Common.waitForElementToBeVisible(locator);
+        Common.clickElement(locator);
     }
 
     public static void selectFormatFromPhotoProduction() {

@@ -1,5 +1,6 @@
 package pages.photoService;
 
+import org.openqa.selenium.By;
 import pages.Locators;
 import pages.Common;
 
@@ -14,8 +15,9 @@ public class OrderList {
     }
 
     public static void clickAgreeButtonAfterEnabled() {
-        Common.waitForElementToBeVisible(Locators.PhotoService.agreeElement);
-        Common.clickElement(Locators.PhotoService.agreeElement);
+        By locator = Locators.PhotoService.agreeElement;
+        Common.waitForElementToBeVisible(locator);
+        Common.clickElement(locator);
     }
 
     public static void selectGiftCoupons() {
@@ -31,8 +33,9 @@ public class OrderList {
     }
 
     public static void clickBuyButtonOnAppearPopup() {
-        Common.waitForElementToBeVisible(Locators.PhotoService.OrderList.giftBuyingSelect);
-        Common.clickElement(Locators.PhotoService.OrderList.giftBuyingSelect);
+        By locator = Locators.PhotoService.OrderList.giftBuyingSelect;
+        Common.waitForElementToBeVisible(locator);
+        Common.clickElement(locator);
     }
 
     public static String getTextFromTotalCartPrice() {
